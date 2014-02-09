@@ -9,7 +9,7 @@ window.MainPage = Backbone.View.extend({
 	},
 
 	next:function(event){
-		this.ChangPage(new CmvaPage());
+		this.ChangePage(new CmvaPage());
 	}
 });
 
@@ -24,7 +24,7 @@ window.CmvaPage = Backbone.View.extend({
 	},
 
 	next:function(event){
-		this.ChangPage(new ClubPage());
+		this.ChangePage(new ClubPage());
 	}
 });
 
@@ -39,7 +39,7 @@ window.ClubPage = Backbone.View.extend({
 	},
 
 	next:function(event){
-		this.ChangPage(new EasyPage());
+		this.ChangePage(new EasyPage());
 	}
 });
 
@@ -54,7 +54,7 @@ window.EasyPage = Backbone.View.extend({
 	},
 
 	next:function(event){
-		this.ChangPage(new CheckinPage());
+		this.ChangePage(new CheckinPage());
 	}
 });
 
@@ -69,6 +69,6 @@ window.CheckinPage = Backbone.View.extend({
 	},
 
 	next:function(event){
-		this.ChangPage(new MainPage());
+		this.ChangePage(new MainPage());
 	}
 });
