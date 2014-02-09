@@ -1,6 +1,6 @@
 // Main Page
 window.MainPage = Backbone.View.extend({
-        initialize:function(){
+    initialize: function () {
 	     this.template = _.template(html.get('main'));
 	},
 
@@ -15,7 +15,7 @@ window.MainPage = Backbone.View.extend({
 
 // CMVA Page
 window.CmvaPage = Backbone.View.extend({
-        initialize:function(){
+    initialize:function(){
 	     this.template = _.template(html.get('cmva'));
 	},
 
