@@ -22,3 +22,14 @@ nav ul.side-nav li{border-bottom: 1px solid #ccc; line-height: 30px;}
     #action-bar img{margin-left: 3px;}
     #action-bar h2{display: inline-block; margin-top: 7px;}
 
+footer{margin-top: 20px; padding-top: 10px;}
+footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:70px;
+   width:100%;
+   background:#B6D7C4;
+}
+    footer .button .icon{font-size: 1.3em;}
+
