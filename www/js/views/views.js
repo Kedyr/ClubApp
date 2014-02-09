@@ -1,21 +1,3 @@
-// Landing Page
-window.LandingPage = Backbone.View.extend({
-
-	initialize:function(){
-	    this.template = _.template(html.get('landing'));
-	},
-
-        // listening for 'Next' key press 
-        events:{
-		"keyup .Next":"next"
-	    },
-
-        // load next page
-        next:function(event){
-	    this.changePage(new MainPage());
-	}
-});
-
 // Main Page
 window.MainPage = Backbone.View.extend({
         initialize:function(){
@@ -23,7 +5,7 @@ window.MainPage = Backbone.View.extend({
 	},
 
 	events:{
-		"keyup .Next":"next"
+		"keyup #Next":"next"
 	},
 
 	next:function(event){
@@ -38,7 +20,7 @@ window.CmvaPage = Backbone.View.extend({
 	},
 
 	events:{
-		"keyup .Next":"next"
+		"keyup #Next":"next"
 	},
 
 	next:function(event){
@@ -53,7 +35,7 @@ window.ClubPage = Backbone.View.extend({
 	},
 
 	events:{
-		"keyup .Next":"next"
+		"keyup #Next":"next"
 	},
 
 	next:function(event){
@@ -68,7 +50,7 @@ window.EasyPage = Backbone.View.extend({
 	},
 
 	events:{
-		"keyup .Next":"next"
+		"keyup #Next":"next"
 	},
 
 	next:function(event){
@@ -83,7 +65,7 @@ window.CheckinPage = Backbone.View.extend({
 	},
 
 	events:{
-		"keyup .Next":"next"
+		"keyup #Next":"next"
 	},
 
 	next:function(event){
