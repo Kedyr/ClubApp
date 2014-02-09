@@ -16,6 +16,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
+// Commenting out default constructor
+/*
 var app = {
     // Application Constructor
     initialize: function() {
@@ -47,3 +50,48 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+*/
+
+// Custom Rounting
+var AppRouter = Backbone.Router.extend({
+    routes:{
+       "":"landing",
+       "landing":"landing",
+       "cmusic":"cmusic",
+       "cmva":"cmva",
+       "edrinking":"edrinking",
+       "main":"main",
+       "checkin":"checkin"
+    },
+
+    initialize:function(){
+       $('.back').live('click', function(event){
+           window.history.back();
+       });
+       this.firstpage = true;
+    },
+
+    landing:function(){
+           this.changePage(new LandingPage());
+    },
+
+    cmusic:function(){
+	    this.changePage(new ClubPage());    
+    },
+
+    cmva:function(){
+	    this.changePage(new CmvaPage());
+    },
+
+    edrinking:function(){
+	    this.changePage(new EasyPage());
+    },
+
+    main:function(){
+	    this.changePage(new MainPage());
+        },
+
+    checkin:function(){
+	    this.changePage(new CheckinPage());
+    }
+});
