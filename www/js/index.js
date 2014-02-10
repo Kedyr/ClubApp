@@ -17,16 +17,16 @@
  * under the License.
  */
 
-// Custom Rounting
+// Custom Routing
 var AppRouter = Backbone.Router.extend({
+    
     routes:{
-       "":"landing",
-       "landing":"landing",
-       "cmusic":"cmusic",
-       "cmva":"cmva",
-       "edrinking":"edrinking",
-       "main":"main",
-       "checkin":"checkin"
+        "":"index",
+        "main":"main",
+        "cmva":"cmva",
+        "clubmusic":"clubmusic",
+        "checkin":"checkin",
+        "ezdrinking":"easydrinking"
     },
 
     initialize:function(){
@@ -35,6 +35,10 @@ var AppRouter = Backbone.Router.extend({
            window.history.back();
        });
        this.firstpage = true;
+    },
+    
+    index: function(){
+        this.changePage(new IndexPage());
     },
 
     landing:function(){

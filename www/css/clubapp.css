@@ -22,8 +22,7 @@ nav ul.side-nav li{border-bottom: 1px solid #ccc; line-height: 30px;}
 
 #action-bar{height: 41px; padding-top: 3px; padding-left: 5px; background-color: #02adea;}
     #action-bar span.icon{padding-top: 3px; font-size: 2.5em; vertical-align: middle; color: #003366;}
-    #action-bar img{margin-left: 3px;}
-    #action-bar h2{display: inline-block; margin-top: 7px;}
+    #action-bar img{margin-left: 3px; font-size: 1.5em;}
 
 footer{margin-top: 20px; padding-top: 10px;}
 footer {
