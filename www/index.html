@@ -49,19 +49,66 @@
     
     <footer class="text-center">
         <div class="row">
-            <div class="small-6 large-6 columns">
-                <a id="Back" href="#" class="small button radius"><span class="icon icon-chevron-left"></span> Back</a>
+            <div class="small-2 large-2 columns">
+                <a id="BtnOne" href="" class="tiny button radius">1</a>
             </div>
-            <div class="small-6 large-6 columns">
-                <a id="Next" href="#" class="small button radius"><span class="icon icon-chevron-right"></span> Next</a>
+            <div class="small-2 large-2 columns">
+                <a id="BtnTwo" href="#" class="tiny button radius">2</a>
+            </div>
+            <div class="small-2 large-2 columns">
+                <a id="BtnThree" href="#" class="tiny button radius">3</a>
+            </div>
+            <div class="small-2 large-2 columns">
+                <a id="BtnFour" href="#" class="tiny button radius">4</a>
+            </div>
+            <div class="small-2 large-2 columns">
+                <a id="BtnFive" href="#" class="tiny button radius">5</a>
+            </div>
+            <div class="small-2 large-2 columns">
+                <a id="BtnSix" href="#" class="tiny button radius">6</a>
             </div>
         </div>
     </footer>
+        
+    </section>
     
     <script type="text/javascript" src="phonegap.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery.js"></script>
+<!-- <script type="text/javascript" src="js/vendor/underscore.min.js"></script>-->
+<!-- <script type="text/javascript" src="js/vendor/backbone.min.js"></script>-->
+<!-- <script type="text/javascript" src="js/views/views.js"></script>-->
+<!-- <script type="text/javascript" src="js/index.js"></script>-->
+    
     <script type="text/javascript">
-        app.initialize();
+        // Show page 1
+        $('#BtnOne').on('click', function(){
+            $('#MainSection').load('index.html #MainLayoutArea');
+        });
+        
+        // Show page 2
+        $('#BtnTwo').on('click', function(){
+            $('#MainSection').load('html/main.html #MainLayoutArea');
+        });
+        
+        // Show page 3
+        $('#BtnThree').on('click', function(){
+            $('#MainSection').load('html/cmva.html #MainLayoutArea');
+        });
+        
+        // Show page 4
+        $('#BtnFour').on('click', function(){
+            $('#MainSection').load('html/clubmusic.html #MainLayoutArea');
+        });
+        
+        // Show page 5
+        $('#BtnFive').on('click', function(){
+            $('#MainSection').load('html/checkin.html #MainLayoutArea');
+        });
+        
+        // Show page 6
+        $('#BtnSix').on('click', function(){
+            $('#MainSection').load('html/easydrinking.html #MainLayoutArea');
+        });
     </script>
 </body>
 </html>
